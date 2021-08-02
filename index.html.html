@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<link rel='stylesheet' href='styles.css'>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eben Notebook +</title> 
+</head>
+
+<body>
+	<h1> EB<span><ins>E</ins></span>N nOTEBOOK <span><ins>+</ins></span></h1>
+	
+	<div id='left-div'>
+		<p class='font'>B</p>
+		<p class='font'>I</p>
+		<p class='font'>U</p>
+		<br>
+		<textarea placeholder='Enter your text here...'></textarea>
+		<center> <button id='saveButton'>SAVE</button> </center>
+		<center> <button id='deleteButton'>DELETE ALL</button> </center>
+		<p></p>
+		
+		 
+ 	</div>
+
+	<div id='right-div'>
+		<section id='formatting'>
+			<button class='btn'>B</button>
+			<button class='btn'>I</button>
+			<button class='btn'>U</button>
+			<button class='btn' title='Decrease Font'>A-</button>
+			<button class='btn' title='Increase Font'>A+</button>
+			<div class='drop-down'>
+			<p>Font Size</p>
+			<select>
+				<option class='num' onclick='fontSize(this)'>8</option>
+				<option class='num' onclick='fontSize(this)'>9</option>
+				<option class='num' onclick='fontSize(this)'>10</option>
+				<option class='num' onclick='fontSize(this)'>11</option>
+				<option class='num' onclick='fontSize(this)'>12</option>
+				<option class='num' onclick='fontSize(this)'>13</option>
+				<option class='num' onclick='fontSize(this)'>14</option>
+				<option class='num' onclick='fontSize(this)'>15</option>
+				<option class='num' onclick='fontSize(this)'>16</option>
+				<option class='num' onclick='fontSize(this)'>17</option>
+				<option class='num' onclick='fontSize(this)'>18</option>
+				<option class='num' onclick='fontSize(this)'>19</option>
+				<option class='num' onclick='fontSize(this)'>20</option>
+				<option class='num' onclick='fontSize(this)'>21</option>
+				<option class='num' onclick='fontSize(this)'>22</option>
+				<option class='num' onclick='fontSize(this)'>23</option>
+				<option class='num' onclick='fontSize(this)'>24</option>
+				<option class='num' onclick='fontSize(this)'>25</option>
+				<option class='num' onclick='fontSize(this)'>26</option>
+				<option class='num' onclick='fontSize(this)'>27</option>
+				<option class='num' onclick='fontSize(this)'>28</option>
+				<option class='num' onclick='fontSize(this)'>29</option>
+				<option class='num' onclick='fontSize(this)'>30</option>
+				<option class='num' onclick='fontSize(this)'>31</option>
+				<option class='num' onclick='fontSize(this)'>32</option>
+				<option class='num' onclick='fontSize(this)'>33</option>
+				<option class='num' onclick='fontSize(this)'>34</option>
+				<option class='num' onclick='fontSize(this)'>35</option>
+				<option class='num' onclick='fontSize(this)'>36</option>
+				<option class='num' onclick='fontSize(this)'>37</option>
+				<option class='num' onclick='fontSize(this)'>38</option>
+				<option class='num' onclick='fontSize(this)'>39</option>
+				<option class='num' onclick='fontSize(this)'>40</option>
+				<option class='num' onclick='fontSize(this)'>41</option>
+				<option class='num' onclick='fontSize(this)'>42</option>
+				<option class='num' onclick='fontSize(this)'>43</option>
+				<option class='num' onclick='fontSize(this)'>44</option>
+				<option class='num' onclick='fontSize(this)'>45</option>
+				<option class='num' onclick='fontSize(this)'>46</option>
+				<option class='num' onclick='fontSize(this)'>47</option>
+				<option class='num' onclick='fontSize(this)'>48</option>
+				<option class='num' onclick='fontSize(this)'>49</option>
+				<option class='num' onclick='fontSize(this)'>50</option>
+			</select>
+			</div>
+
+			<div class='drop-down'>	
+			<p>Text Color</p>		
+			<select>
+				<option class='fontColor' onclick='textColor(this)'>Red</option>
+				<option class='fontColor' onclick='textColor(this)'>Green</option>
+				<option class='fontColor' onclick='textColor(this)'>Blue</option>
+				<option class='fontColor' onclick='textColor(this)'>Yellow</option>
+				<option class='fontColor' onclick='textColor(this)'>White</option>
+			</select>
+			</div>
+
+			<div class='drop-down'>
+			<p>Font Family</p>
+			<select>
+				<option onclick='fontFamily(this)'>arial</option>
+				<option onclick='fontFamily(this)'>verdana</option>
+				<option onclick='fontFamily(this)'>courier</option>
+				<option onclick='fontFamily(this)'>san-serif</option>
+			</select>
+			</div>
+			<!-- <p id='sticky'>Quick Format</p> -->
+		</section>
+
+		
+		<div id='background-content'>
+		<article id='content'></article>
+		<section id='quick-format'>
+			<p class='font'>B</p>
+			<p class='font'>I</p>
+			<p class='font'>U</p>
+		</section>
+		<textarea id='mobile-text-view' placeholder='Enter your text here...'></textarea>
+		<br>
+		<center> <button id='saveButton' class='mobile'>SAVE</button> </center>
+		<center> <button id='deleteButton' class='mobile'>DELETE ALL</button> </center>
+		<br><br><br>
+		<div id='mobile-background-content'>
+		<article id='mobile-content'></article>
+		</div>
+		</div>
+	</div> 
+
+<script src='script.js'></script>
+</body>
+
+</html>
