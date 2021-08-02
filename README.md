@@ -1,2 +1,0 @@
-# akindele-ebenezer
- Notebook
